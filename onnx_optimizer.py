@@ -1,10 +1,6 @@
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-from collections import OrderedDict
-import numpy as np
-import cv2
 
-import onnx
 
 def onnx_optim(onnxfile, save_onnxfile):
     onnx_path = os.path.abspath(os.path.expanduser(onnxfile))

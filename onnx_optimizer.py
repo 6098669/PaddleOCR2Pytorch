@@ -4,8 +4,6 @@ from collections import OrderedDict
 import numpy as np
 import cv2
 
-import onnx
-
 def onnx_optim(onnxfile, save_onnxfile):
     onnx_path = os.path.abspath(os.path.expanduser(onnxfile))
     save_onnxpath = os.path.abspath(os.path.expanduser(save_onnxfile))
